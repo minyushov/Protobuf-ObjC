@@ -12,6 +12,9 @@ Pod::Spec.new do |s|
   s.resources = [
     "src/compiler/protoc-gen-objc"
   ]
+  s.preserve_paths = [
+    "src/compiler/protoc-gen-objc"
+  ]
 
   def s.pre_install(pod, target_definition)
     Dir.chdir(pod.root) do
