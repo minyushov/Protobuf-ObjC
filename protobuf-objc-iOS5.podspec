@@ -9,4 +9,13 @@ Pod::Spec.new do |s|
   s.source   = { :git => 'https://github.com/jrmiddle/protobuf-objc-iOS5.git' , :commit => '1ecf65bab73a564e0f4838959f3d430d1b3863aa' }
   s.source_files = 'src/runtime/Classes/*.{h,m}'
   s.xcconfig = { 'WARNING_CFLAGS' => '-Wno-missing-prototypes -Wno-format' }
+  s.preserve_paths = [
+    "src/compiler/protoc-gen-objc"
+  ]
+
+  def s.pre_install(pod, target_definition)
+    Dir.chdir(pod.root) do
+      `./autogen.sh && ./configure && make`
+    end
+  end
 end
