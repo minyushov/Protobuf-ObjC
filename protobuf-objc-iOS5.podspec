@@ -9,9 +9,9 @@ Pod::Spec.new do |s|
   s.source   = { :git => 'https://github.com/jrmiddle/protobuf-objc-iOS5.git' }
   s.source_files = 'src/runtime/Classes/*.{h,m}'
   s.xcconfig = { 'WARNING_CFLAGS' => '-Wno-missing-prototypes -Wno-format' }
-  s.resources = [
-    "src/compiler/protoc-gen-objc"
-  ]
+#  s.resources = [
+#    "src/compiler/protoc-gen-objc"
+#  ]
   s.preserve_paths = [
     "src/compiler/protoc-gen-objc"
   ]
