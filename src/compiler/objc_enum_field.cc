@@ -100,8 +100,8 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
       "- (BOOL) has$capitalized_name$ {\n"
       "  return !!has$capitalized_name$_;\n"
       "}\n"
-      "- (void) setHas$capitalized_name$:(BOOL) value {\n"
-      "  has$capitalized_name$_ = !!value;\n"
+      "- (void) setHas$capitalized_name$:(BOOL) theValue {\n"
+      "  has$capitalized_name$_ = !!theValue;\n"
       "}\n"
       "@synthesize $name$;\n");
   }
@@ -255,25 +255,13 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
 
 
   void RepeatedEnumFieldGenerator::GeneratePropertyHeader(io::Printer* printer) const {
-		//check if object array vs primitive array
-	//	if(isObjectArray(descriptor_)){
-	//		printer->Print(variables_, "@property (readonly, strong) NSArray * $name$;\n");
-	//	}else{
-			printer->Print(variables_, "@property (readonly, strong) PBArray * $name$;\n");
-	//	}
-    
+    printer->Print(variables_, "@property (readonly, strong) PBArray * $name$;\n");
   }
 
 
   void RepeatedEnumFieldGenerator::GenerateExtensionSource(io::Printer* printer) const {
-		//check if object array vs primitive array
-	//	if(isObjectArray(descriptor_)){
-//			printer->Print(variables_,
-	//	      "@property (strong) NSMutableArray * $list_name$;\n");
-	//	}else{
 			printer->Print(variables_,
 		      "@property (strong) PBAppendableArray * $list_name$;\n");
-	//	}
   }
 
   void RepeatedEnumFieldGenerator::GenerateSynthesizeSource(io::Printer* printer) const {
@@ -342,17 +330,17 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
       "}\n"
       "- ($classname$_Builder *)add$capitalized_name$:($type$)value {\n"
       "  if (result.$list_name$ == nil) {\n"
-      "    result.$list_name$ = [PBAppendableArray arrayWithValueType:PBArrayValueTypeInt32];\n"
+      "    result.$list_name$ = [PBAppendableArray newArrayWithValueType:PBArrayValueTypeInt32];\n"
       "  }\n"
       "  [result.$list_name$ addInt32:value];\n"
       "  return self;\n"
       "}\n"
       "- ($classname$_Builder *)set$capitalized_name$Array:(NSArray *)array {\n"
-      "  result.$list_name$ = [PBAppendableArray arrayWithArray:array valueType:PBArrayValueTypeInt32];\n"
+      "  result.$list_name$ = [PBAppendableArray newArrayWithArray:array valueType:PBArrayValueTypeInt32];\n"
       "  return self;\n"
       "}\n"
       "- ($classname$_Builder *)set$capitalized_name$Values:(const $type$ *)values count:(NSUInteger)count {\n"
-      "  result.$list_name$ = [PBAppendableArray arrayWithValues:values count:count valueType:PBArrayValueTypeInt32];\n"
+      "  result.$list_name$ = [PBAppendableArray newArrayWithValues:values count:count valueType:PBArrayValueTypeInt32];\n"
       "  return self;\n"
       "}\n"
       "- ($classname$_Builder *)clear$capitalized_name$ {\n"
@@ -463,8 +451,8 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
 
   void RepeatedEnumFieldGenerator::GenerateDescriptionCodeSource(io::Printer* printer) const {
     printer->Print(variables_,
-      "for (NSNumber* element in self.$list_name$) {\n"
-      "  [output appendFormat:@\"%@%@: %d\\n\", indent, @\"$name$\", element.intValue];\n"
+      "for(int i=0,listCount=self.$list_name$.count;i<listCount;i++){\n"
+      "  [output appendFormat:@\"%@%@: %d\\n\", indent, @\"$name$\", [self.$list_name$ int32AtIndex:i]];\n"
       "}\n");
   }
 
@@ -476,8 +464,8 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
 
   void RepeatedEnumFieldGenerator::GenerateHashCodeSource(io::Printer* printer) const {
     printer->Print(variables_,
-      "for (NSNumber* element in self.$list_name$) {\n"
-      "  hashCode = hashCode * 31 + element.intValue;\n"
+      "for(int i=0,listCount=self.$list_name$.count;i<listCount;i++){\n"
+      "  hashCode = hashCode * 31 + [self.$list_name$ int32AtIndex:i];\n"
       "}\n");
   }
 }  // namespace objectivec

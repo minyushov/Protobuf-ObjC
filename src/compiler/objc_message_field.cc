@@ -72,7 +72,8 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
 
 
   void MessageFieldGenerator::GenerateFieldHeader(io::Printer* printer) const {
-    printer->Print(variables_, "$storage_type$ $name$$storage_attribute$;\n");
+    //printer->Print(variables_, "$storage_type$ $name$$storage_attribute$;\n");
+    printer->Print(variables_, "$storage_type$ $name$;\n");
   }
 
 
@@ -101,8 +102,8 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
       "- (BOOL) has$capitalized_name$ {\n"
       "  return !!has$capitalized_name$_;\n"
       "}\n"
-      "- (void) setHas$capitalized_name$:(BOOL) value {\n"
-      "  has$capitalized_name$_ = !!value;\n"
+      "- (void) setHas$capitalized_name$:(BOOL) theValue {\n"
+      "  has$capitalized_name$_ = !!theValue;\n"
       "}\n"
       "@synthesize $name$;\n");
   }
@@ -281,7 +282,7 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
 	      "NSMutableArray * $list_name$;\n");
 	}else{
 		printer->Print(variables_,
-	      "PBAppendableArray * $list_name$;\n");
+			       "PBAppendableArray * $list_name$;\n");
 	}
   }
 

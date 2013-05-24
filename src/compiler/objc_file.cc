@@ -179,7 +179,7 @@ namespace google { namespace protobuf { namespace compiler {namespace objectivec
     }
 
     printer->Print(
-      "PBMutableExtensionRegistry* registry = [PBMutableExtensionRegistry registry];\n"
+      "PBMutableExtensionRegistry* registry = [PBMutableExtensionRegistry newRegistry];\n"
       "[self registerAllExtensions:registry];\n");
 
     for (int i = 0; i < file_->dependency_count(); i++) {
