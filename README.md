@@ -1,4 +1,4 @@
-# Protocol Buffers, Objective C iOS5
+# Protocol Buffers 2.5, Objective-C with ARC
 
 This is an ARC enabled version of the [Protocol Buffers in Objective C][protobuf-objc] project. It supports Protobuf 2.5.
 
