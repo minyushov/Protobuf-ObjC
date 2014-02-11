@@ -338,7 +338,7 @@ static PBArrayValueTypeInfo PBValueTypes[] =
 		if (_capacity == 0)
 		{
 			_capacity = requiredSlots;
-            wasAllocated=NO;
+            wasAllocated=NO; (void)wasAllocated;
 		}
 		else
 		{
