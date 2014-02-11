@@ -16,9 +16,5 @@ Pod::Spec.new do |s|
     "src/compiler/protoc-gen-objc"
   ]
 
-  def s.pre_install(pod, target_definition)
-    Dir.chdir(pod.root) do
-      `./autogen.sh && ./configure && make`
-    end
-  end
+  s.prepare_command = './autogen.sh && ./configure && make'
 end
