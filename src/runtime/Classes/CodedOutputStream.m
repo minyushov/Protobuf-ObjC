@@ -20,6 +20,7 @@
 #import "Message.h"
 #import "Utilities.h"
 #import "WireFormat.h"
+#import "UnknownFieldSet.h"
 
 
 @implementation PBCodedOutputStream
