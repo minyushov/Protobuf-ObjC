@@ -27,7 +27,9 @@
 
 
 + (NSData*) goldenData {
-  NSString* path = [[NSBundle mainBundle] pathForResource:@"golden_message" ofType:nil];
+  // using this rather than -mainBundle to fix octest failure.
+  NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+  NSString* path = [bundle pathForResource:@"golden_message" ofType:nil];
   if (path == nil) {
     path = @"golden_message";
   }
@@ -37,7 +39,9 @@
 
 
 + (NSData*) goldenPackedFieldsData {
-  NSString* path = [[NSBundle mainBundle] pathForResource:@"golden_packed_fields_message" ofType:nil];
+  // using this rather than -mainBundle to fix octest failure.
+  NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+  NSString* path = [bundle pathForResource:@"golden_packed_fields_message" ofType:nil];
   if (path == nil) {
     path = @"golden_packed_fields_message";
   }
