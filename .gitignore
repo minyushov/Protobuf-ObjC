@@ -21,6 +21,8 @@ m4
 stamp-h1
 compile
 
+*.distro
+
 # Targets
 src/compiler/protoc-gen-objc
 
