@@ -1,22 +1,27 @@
 Pod::Spec.new do |s|
   s.name     = 'protobuf-objc-iOS5'
   s.header_dir = "ProtocolBuffers"
-  s.version  = '0.0.1'
+  s.version  = '0.0.2'
   s.license  = 'Apache 2.0'
   s.summary  = 'An implementation of Protocol Buffers in Objective C.'
   s.homepage = 'https://github.com/jrmiddle/protobuf-objc-iOS5'
-  s.authors   = { 'Justin Middleton' => 'justin@whistle.com', 'Ragy Eleish' => 'ragy@regwez.com', 'Cyrus' => 'cyrusn@stwing.upenn.edu' }
-  s.source   = { :git => 'https://github.com/jrmiddle/protobuf-objc-iOS5.git' }
-  s.source_files = 'src/runtime/Classes/*.{h,m}'
+  s.authors   = { 'Justin Middleton' => 'justin@whistle.com', 'Ragy Eleish' => 'ragy@regwez.com', 'Cyrus' => 'cyrusn@stwing.upenn.edu', 'Robert Carlsen' => 'robert@robertcarlsen.net' }
+  s.source   = { :git => 'https://github.com/rcarlsen/protobuf-objc-iOS5.git', :tag => '0.0.2' }
   s.xcconfig = { 'WARNING_CFLAGS' => '-Wno-missing-prototypes -Wno-format' }
   s.requires_arc = true
 
-#  s.resources = [
-#    "src/compiler/protoc-gen-objc"
-#  ]
-  s.preserve_paths = [
-    "src/compiler/protoc-gen-objc"
-  ]
+  s.subspec 'Runtime' do |ss|
+    ss.source_files = 'src/runtime/Classes/*.{h,m}'
+  end
 
-  s.prepare_command = './autogen.sh && ./configure && make'
+  # this subspec should not be used...it is just a way to separate
+  # the runtime files and ease pod integration with other projects
+  s.subspec 'Compiler' do |ss|
+    ss.preserve_paths = [
+      "src/compiler/protoc-gen-objc"
+    ]
+
+    ss.prepare_command = './autogen.sh && ./configure && make'
+  end
+
 end
