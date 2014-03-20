@@ -16,12 +16,12 @@ Pod::Spec.new do |s|
 
   # this subspec should not be used...it is just a way to separate
   # the runtime files and ease pod integration with other projects
-  s.subspec 'Compiler' do |ss|
-    ss.preserve_paths = [
-      "src/compiler/protoc-gen-objc"
-    ]
-
-    ss.prepare_command = './autogen.sh && ./configure && make'
-  end
+#  s.subspec 'Compiler' do |ss|
+#    ss.preserve_paths = [
+#      "src/compiler/protoc-gen-objc"
+#    ]
+#
+#    ss.prepare_command = './autogen.sh && ./configure && make'
+#  end
 
 end
