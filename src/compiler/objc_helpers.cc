@@ -503,6 +503,7 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
                 "\"]";
             }
           }
+	  return "";
         case FieldDescriptor::CPPTYPE_ENUM:
           return EnumValueName(field->default_value_enum());
         case FieldDescriptor::CPPTYPE_MESSAGE:

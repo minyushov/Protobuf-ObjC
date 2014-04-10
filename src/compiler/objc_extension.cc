@@ -150,7 +150,7 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
 		if(isObjectArray(descriptor_)){
 			vars["default"] = string("[[NSArray alloc] init]");
 		}else{
-			vars["default"] = string("[PBArray arrayWithValueType:") + GetArrayValueType(descriptor_) + "]";
+			vars["default"] = string("[PBArray newArrayWithValueType:") + GetArrayValueType(descriptor_) + "]";
 		}
 	}else{
 		vars["default"] =  BoxValue(descriptor_, DefaultValue(descriptor_));
