@@ -9,57 +9,29 @@
 /* Begin PBXBuildFile section */
 		051CED4C14A3B7EE00B10A9C /* golden_message in Resources */ = {isa = PBXBuildFile; fileRef = 051CED4A14A3B7EE00B10A9C /* golden_message */; };
 		051CED4D14A3B7EE00B10A9C /* golden_packed_fields_message in Resources */ = {isa = PBXBuildFile; fileRef = 051CED4B14A3B7EE00B10A9C /* golden_packed_fields_message */; };
-		0527D91714BE7780006562A5 /* ProtocolBuffers-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 0527D91614BE7780006562A5 /* ProtocolBuffers-Prefix.pch */; };
 		0537044214A176C100F18F4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0537044114A176C100F18F4E /* Foundation.framework */; };
 		0537045014A176C100F18F4E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0537044F14A176C100F18F4E /* SenTestingKit.framework */; };
 		0537045F14A176C100F18F4E /* ProtocolBuffer_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0537045E14A176C100F18F4E /* ProtocolBuffer_iOSTests.m */; };
 		0537049814A1773700F18F4E /* PBArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 0537046814A1773700F18F4E /* PBArray.m */; };
-		0537049914A1773700F18F4E /* PBArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 0537046914A1773700F18F4E /* PBArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0537049A14A1773700F18F4E /* CodedInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 0537046A14A1773700F18F4E /* CodedInputStream.m */; };
 		0537049B14A1773700F18F4E /* Descriptor.pb.m in Sources */ = {isa = PBXBuildFile; fileRef = 0537046B14A1773700F18F4E /* Descriptor.pb.m */; };
 		0537049C14A1773700F18F4E /* MutableExtensionRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 0537046C14A1773700F18F4E /* MutableExtensionRegistry.m */; };
 		0537049D14A1773700F18F4E /* MutableField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0537046D14A1773700F18F4E /* MutableField.m */; };
 		0537049E14A1773700F18F4E /* CodedOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 0537046E14A1773700F18F4E /* CodedOutputStream.m */; };
 		0537049F14A1773700F18F4E /* ConcreteExtensionField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0537046F14A1773700F18F4E /* ConcreteExtensionField.m */; };
-		053704A014A1773700F18F4E /* AbstractMessage_Builder.h in Headers */ = {isa = PBXBuildFile; fileRef = 0537047014A1773700F18F4E /* AbstractMessage_Builder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		053704A114A1773700F18F4E /* AbstractMessage_Builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0537047114A1773700F18F4E /* AbstractMessage_Builder.m */; };
-		053704A214A1773700F18F4E /* AbstractMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0537047214A1773700F18F4E /* AbstractMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		053704A314A1773700F18F4E /* AbstractMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0537047314A1773700F18F4E /* AbstractMessage.m */; };
-		053704A414A1773700F18F4E /* Bootstrap.h in Headers */ = {isa = PBXBuildFile; fileRef = 0537047414A1773700F18F4E /* Bootstrap.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		053704A514A1773700F18F4E /* CodedInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 0537047514A1773700F18F4E /* CodedInputStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		053704A614A1773700F18F4E /* CodedOutputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 0537047614A1773700F18F4E /* CodedOutputStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		053704A714A1773700F18F4E /* ConcreteExtensionField.h in Headers */ = {isa = PBXBuildFile; fileRef = 0537047714A1773700F18F4E /* ConcreteExtensionField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		053704A814A1773700F18F4E /* Descriptor.pb.h in Headers */ = {isa = PBXBuildFile; fileRef = 0537047814A1773700F18F4E /* Descriptor.pb.h */; };
-		053704A914A1773700F18F4E /* ExtendableMessage_Builder.h in Headers */ = {isa = PBXBuildFile; fileRef = 0537047914A1773700F18F4E /* ExtendableMessage_Builder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		053704AA14A1773700F18F4E /* ExtendableMessage_Builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0537047A14A1773700F18F4E /* ExtendableMessage_Builder.m */; };
-		053704AB14A1773700F18F4E /* ExtendableMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0537047B14A1773700F18F4E /* ExtendableMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		053704AC14A1773700F18F4E /* ExtendableMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0537047C14A1773700F18F4E /* ExtendableMessage.m */; };
-		053704AD14A1773700F18F4E /* ExtensionField.h in Headers */ = {isa = PBXBuildFile; fileRef = 0537047D14A1773700F18F4E /* ExtensionField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		053704AE14A1773700F18F4E /* ExtensionRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 0537047E14A1773700F18F4E /* ExtensionRegistry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		053704AF14A1773700F18F4E /* ExtensionRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 0537047F14A1773700F18F4E /* ExtensionRegistry.m */; };
-		053704B014A1773700F18F4E /* Field.h in Headers */ = {isa = PBXBuildFile; fileRef = 0537048014A1773700F18F4E /* Field.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		053704B114A1773700F18F4E /* Field.m in Sources */ = {isa = PBXBuildFile; fileRef = 0537048114A1773700F18F4E /* Field.m */; };
-		053704B214A1773700F18F4E /* ForwardDeclarations.h in Headers */ = {isa = PBXBuildFile; fileRef = 0537048214A1773700F18F4E /* ForwardDeclarations.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		053704B314A1773700F18F4E /* GeneratedMessage_Builder.h in Headers */ = {isa = PBXBuildFile; fileRef = 0537048314A1773700F18F4E /* GeneratedMessage_Builder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		053704B414A1773700F18F4E /* GeneratedMessage_Builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0537048414A1773700F18F4E /* GeneratedMessage_Builder.m */; };
-		053704B514A1773700F18F4E /* GeneratedMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0537048514A1773700F18F4E /* GeneratedMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		053704B614A1773700F18F4E /* GeneratedMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0537048614A1773700F18F4E /* GeneratedMessage.m */; };
-		053704B714A1773700F18F4E /* Message_Builder.h in Headers */ = {isa = PBXBuildFile; fileRef = 0537048714A1773700F18F4E /* Message_Builder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		053704B814A1773700F18F4E /* Message.h in Headers */ = {isa = PBXBuildFile; fileRef = 0537048814A1773700F18F4E /* Message.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		053704B914A1773700F18F4E /* MutableExtensionRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 0537048914A1773700F18F4E /* MutableExtensionRegistry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		053704BA14A1773700F18F4E /* MutableField.h in Headers */ = {isa = PBXBuildFile; fileRef = 0537048A14A1773700F18F4E /* MutableField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		053704BB14A1773700F18F4E /* ProtocolBuffers.h in Headers */ = {isa = PBXBuildFile; fileRef = 0537048B14A1773700F18F4E /* ProtocolBuffers.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		053704BC14A1773700F18F4E /* RingBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0537048C14A1773700F18F4E /* RingBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		053704BD14A1773700F18F4E /* RingBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0537048D14A1773700F18F4E /* RingBuffer.m */; };
-		053704BE14A1773700F18F4E /* TextFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 0537048E14A1773700F18F4E /* TextFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		053704BF14A1773700F18F4E /* TextFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 0537048F14A1773700F18F4E /* TextFormat.m */; };
-		053704C014A1773700F18F4E /* UnknownFieldSet_Builder.h in Headers */ = {isa = PBXBuildFile; fileRef = 0537049014A1773700F18F4E /* UnknownFieldSet_Builder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		053704C114A1773700F18F4E /* UnknownFieldSet_Builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0537049114A1773700F18F4E /* UnknownFieldSet_Builder.m */; };
-		053704C214A1773700F18F4E /* UnknownFieldSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 0537049214A1773700F18F4E /* UnknownFieldSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		053704C314A1773700F18F4E /* UnknownFieldSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0537049314A1773700F18F4E /* UnknownFieldSet.m */; };
-		053704C414A1773700F18F4E /* Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 0537049414A1773700F18F4E /* Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		053704C514A1773700F18F4E /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 0537049514A1773700F18F4E /* Utilities.m */; };
-		053704C614A1773700F18F4E /* WireFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 0537049614A1773700F18F4E /* WireFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		053704C714A1773700F18F4E /* WireFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 0537049714A1773700F18F4E /* WireFormat.m */; };
 		0537053214A1947600F18F4E /* ArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 053704C814A1779100F18F4E /* ArrayTests.m */; };
 		0537053314A1947600F18F4E /* Main.m in Sources */ = {isa = PBXBuildFile; fileRef = 053704C914A1779100F18F4E /* Main.m */; };
@@ -88,6 +60,32 @@
 		0537054A14A1949400F18F4E /* WireFormatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 053704F814A1779700F18F4E /* WireFormatTests.m */; };
 		0537058B14A1BD7700F18F4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0537044114A176C100F18F4E /* Foundation.framework */; };
 		053CE45514A2B655008471AB /* libProtocolBuffers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0537043E14A176C100F18F4E /* libProtocolBuffers.a */; };
+		D252CEF7198111E10086E917 /* PBArray.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0537046914A1773700F18F4E /* PBArray.h */; };
+		D252CEF8198111E10086E917 /* AbstractMessage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0537047214A1773700F18F4E /* AbstractMessage.h */; };
+		D252CEF9198111E10086E917 /* Bootstrap.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0537047414A1773700F18F4E /* Bootstrap.h */; };
+		D252CEFA198111E10086E917 /* CodedInputStream.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0537047514A1773700F18F4E /* CodedInputStream.h */; };
+		D252CEFB198111E10086E917 /* CodedOutputStream.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0537047614A1773700F18F4E /* CodedOutputStream.h */; };
+		D252CEFC198111E10086E917 /* ConcreteExtensionField.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0537047714A1773700F18F4E /* ConcreteExtensionField.h */; };
+		D252CEFD198111E10086E917 /* ExtendableMessage_Builder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0537047914A1773700F18F4E /* ExtendableMessage_Builder.h */; };
+		D252CEFE198111E10086E917 /* ExtendableMessage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0537047B14A1773700F18F4E /* ExtendableMessage.h */; };
+		D252CEFF198111E10086E917 /* ExtensionField.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0537047D14A1773700F18F4E /* ExtensionField.h */; };
+		D252CF00198111E10086E917 /* ExtensionRegistry.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0537047E14A1773700F18F4E /* ExtensionRegistry.h */; };
+		D252CF01198111E10086E917 /* Field.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0537048014A1773700F18F4E /* Field.h */; };
+		D252CF02198111E10086E917 /* ForwardDeclarations.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0537048214A1773700F18F4E /* ForwardDeclarations.h */; };
+		D252CF03198111E10086E917 /* GeneratedMessage_Builder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0537048314A1773700F18F4E /* GeneratedMessage_Builder.h */; };
+		D252CF04198111E10086E917 /* GeneratedMessage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0537048514A1773700F18F4E /* GeneratedMessage.h */; };
+		D252CF05198111E10086E917 /* Message_Builder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0537048714A1773700F18F4E /* Message_Builder.h */; };
+		D252CF06198111E10086E917 /* Message.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0537048814A1773700F18F4E /* Message.h */; };
+		D252CF07198111E10086E917 /* MutableExtensionRegistry.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0537048914A1773700F18F4E /* MutableExtensionRegistry.h */; };
+		D252CF08198111E10086E917 /* MutableField.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0537048A14A1773700F18F4E /* MutableField.h */; };
+		D252CF09198111E10086E917 /* ProtocolBuffers.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0537048B14A1773700F18F4E /* ProtocolBuffers.h */; };
+		D252CF0A198111E10086E917 /* RingBuffer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0537048C14A1773700F18F4E /* RingBuffer.h */; };
+		D252CF0B198111E10086E917 /* TextFormat.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0537048E14A1773700F18F4E /* TextFormat.h */; };
+		D252CF0C198111E10086E917 /* UnknownFieldSet_Builder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0537049014A1773700F18F4E /* UnknownFieldSet_Builder.h */; };
+		D252CF0D198111E10086E917 /* UnknownFieldSet.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0537049214A1773700F18F4E /* UnknownFieldSet.h */; };
+		D252CF0E198111E10086E917 /* Utilities.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0537049414A1773700F18F4E /* Utilities.h */; };
+		D252CF0F198111E10086E917 /* WireFormat.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0537049614A1773700F18F4E /* WireFormat.h */; };
+		D252CF10198112180086E917 /* AbstractMessage_Builder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0537047014A1773700F18F4E /* AbstractMessage_Builder.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +97,44 @@
 			remoteInfo = ProtocolBuffers;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D252CEF6198111420086E917 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				D252CF10198112180086E917 /* AbstractMessage_Builder.h in CopyFiles */,
+				D252CEF7198111E10086E917 /* PBArray.h in CopyFiles */,
+				D252CEF8198111E10086E917 /* AbstractMessage.h in CopyFiles */,
+				D252CEF9198111E10086E917 /* Bootstrap.h in CopyFiles */,
+				D252CEFA198111E10086E917 /* CodedInputStream.h in CopyFiles */,
+				D252CEFB198111E10086E917 /* CodedOutputStream.h in CopyFiles */,
+				D252CEFC198111E10086E917 /* ConcreteExtensionField.h in CopyFiles */,
+				D252CEFD198111E10086E917 /* ExtendableMessage_Builder.h in CopyFiles */,
+				D252CEFE198111E10086E917 /* ExtendableMessage.h in CopyFiles */,
+				D252CEFF198111E10086E917 /* ExtensionField.h in CopyFiles */,
+				D252CF00198111E10086E917 /* ExtensionRegistry.h in CopyFiles */,
+				D252CF01198111E10086E917 /* Field.h in CopyFiles */,
+				D252CF02198111E10086E917 /* ForwardDeclarations.h in CopyFiles */,
+				D252CF03198111E10086E917 /* GeneratedMessage_Builder.h in CopyFiles */,
+				D252CF04198111E10086E917 /* GeneratedMessage.h in CopyFiles */,
+				D252CF05198111E10086E917 /* Message_Builder.h in CopyFiles */,
+				D252CF06198111E10086E917 /* Message.h in CopyFiles */,
+				D252CF07198111E10086E917 /* MutableExtensionRegistry.h in CopyFiles */,
+				D252CF08198111E10086E917 /* MutableField.h in CopyFiles */,
+				D252CF09198111E10086E917 /* ProtocolBuffers.h in CopyFiles */,
+				D252CF0A198111E10086E917 /* RingBuffer.h in CopyFiles */,
+				D252CF0B198111E10086E917 /* TextFormat.h in CopyFiles */,
+				D252CF0C198111E10086E917 /* UnknownFieldSet_Builder.h in CopyFiles */,
+				D252CF0D198111E10086E917 /* UnknownFieldSet.h in CopyFiles */,
+				D252CF0E198111E10086E917 /* Utilities.h in CopyFiles */,
+				D252CF0F198111E10086E917 /* WireFormat.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		051CED4A14A3B7EE00B10A9C /* golden_message */ = {isa = PBXFileReference; lastKnownFileType = file; path = golden_message; sourceTree = "<group>"; };
@@ -209,6 +245,7 @@
 		053704F614A1779700F18F4E /* UtilitiesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilitiesTests.m; sourceTree = "<group>"; };
 		053704F714A1779700F18F4E /* WireFormatTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WireFormatTests.h; sourceTree = "<group>"; };
 		053704F814A1779700F18F4E /* WireFormatTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WireFormatTests.m; sourceTree = "<group>"; };
+		D296B03619B8869300F1015A /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -405,44 +442,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		0537043C14A176C100F18F4E /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				053704A414A1773700F18F4E /* Bootstrap.h in Headers */,
-				053704B214A1773700F18F4E /* ForwardDeclarations.h in Headers */,
-				053704BB14A1773700F18F4E /* ProtocolBuffers.h in Headers */,
-				053704A714A1773700F18F4E /* ConcreteExtensionField.h in Headers */,
-				053704A914A1773700F18F4E /* ExtendableMessage_Builder.h in Headers */,
-				053704AB14A1773700F18F4E /* ExtendableMessage.h in Headers */,
-				053704AD14A1773700F18F4E /* ExtensionField.h in Headers */,
-				053704AE14A1773700F18F4E /* ExtensionRegistry.h in Headers */,
-				053704B014A1773700F18F4E /* Field.h in Headers */,
-				053704BA14A1773700F18F4E /* MutableField.h in Headers */,
-				053704C014A1773700F18F4E /* UnknownFieldSet_Builder.h in Headers */,
-				053704C214A1773700F18F4E /* UnknownFieldSet.h in Headers */,
-				053704A514A1773700F18F4E /* CodedInputStream.h in Headers */,
-				053704A614A1773700F18F4E /* CodedOutputStream.h in Headers */,
-				053704BE14A1773700F18F4E /* TextFormat.h in Headers */,
-				053704C614A1773700F18F4E /* WireFormat.h in Headers */,
-				053704A014A1773700F18F4E /* AbstractMessage_Builder.h in Headers */,
-				053704A214A1773700F18F4E /* AbstractMessage.h in Headers */,
-				053704B314A1773700F18F4E /* GeneratedMessage_Builder.h in Headers */,
-				053704B514A1773700F18F4E /* GeneratedMessage.h in Headers */,
-				053704B714A1773700F18F4E /* Message_Builder.h in Headers */,
-				053704B814A1773700F18F4E /* Message.h in Headers */,
-				053704BC14A1773700F18F4E /* RingBuffer.h in Headers */,
-				053704C414A1773700F18F4E /* Utilities.h in Headers */,
-				0537049914A1773700F18F4E /* PBArray.h in Headers */,
-				053704B914A1773700F18F4E /* MutableExtensionRegistry.h in Headers */,
-				053704A814A1773700F18F4E /* Descriptor.pb.h in Headers */,
-				0527D91714BE7780006562A5 /* ProtocolBuffers-Prefix.pch in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		0537043D14A176C100F18F4E /* ProtocolBuffers */ = {
 			isa = PBXNativeTarget;
@@ -450,7 +449,7 @@
 			buildPhases = (
 				0537043A14A176C100F18F4E /* Sources */,
 				0537043B14A176C100F18F4E /* Frameworks */,
-				0537043C14A176C100F18F4E /* Headers */,
+				D252CEF6198111420086E917 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -478,7 +477,7 @@
 			name = ProtocolBuffersTests;
 			productName = "ProtocolBuffer iOSTests";
 			productReference = 0537044E14A176C100F18F4E /* ProtocolBuffersTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -486,7 +485,8 @@
 		0537043514A176C100F18F4E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastTestingUpgradeCheck = 0600;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Regwez, Inc.";
 			};
 			buildConfigurationList = 0537043814A176C100F18F4E /* Build configuration list for PBXProject "ProtocolBuffers" */;
@@ -495,6 +495,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				sv,
 			);
 			mainGroup = 0537043314A176C100F18F4E;
 			productRefGroup = 0537043F14A176C100F18F4E /* Products */;
@@ -612,6 +613,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0537045B14A176C100F18F4E /* en */,
+				D296B03619B8869300F1015A /* sv */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -629,8 +631,10 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -663,8 +667,10 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -688,6 +694,7 @@
 				GCC_PREFIX_HEADER = "ProtocolBuffers-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)";
@@ -744,6 +751,128 @@
 			};
 			name = Release;
 		};
+		D252CF12198112F70086E917 /* InHouse */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = InHouse;
+		};
+		D252CF13198112F70086E917 /* InHouse */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ProtocolBuffer_iOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ProtocolBuffers-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = InHouse;
+		};
+		D252CF14198112F70086E917 /* InHouse */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ProtocolBuffers-Prefix.pch";
+				INFOPLIST_FILE = "UnitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = InHouse;
+		};
+		D2BDACAD198A918D00F60831 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AdHoc;
+		};
+		D2BDACAE198A918D00F60831 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ProtocolBuffer_iOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ProtocolBuffers-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = AdHoc;
+		};
+		D2BDACAF198A918D00F60831 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ProtocolBuffers-Prefix.pch";
+				INFOPLIST_FILE = "UnitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = AdHoc;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -752,27 +881,33 @@
 			buildConfigurations = (
 				0537046014A176C100F18F4E /* Debug */,
 				0537046114A176C100F18F4E /* Release */,
+				D2BDACAD198A918D00F60831 /* AdHoc */,
+				D252CF12198112F70086E917 /* InHouse */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = AdHoc;
 		};
 		0537046214A176C100F18F4E /* Build configuration list for PBXNativeTarget "ProtocolBuffers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0537046314A176C100F18F4E /* Debug */,
 				0537046414A176C100F18F4E /* Release */,
+				D2BDACAE198A918D00F60831 /* AdHoc */,
+				D252CF13198112F70086E917 /* InHouse */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = AdHoc;
 		};
 		0537046514A176C100F18F4E /* Build configuration list for PBXNativeTarget "ProtocolBuffersTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0537046614A176C100F18F4E /* Debug */,
 				0537046714A176C100F18F4E /* Release */,
+				D2BDACAF198A918D00F60831 /* AdHoc */,
+				D252CF14198112F70086E917 /* InHouse */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = AdHoc;
 		};
 /* End XCConfigurationList section */
 	};
