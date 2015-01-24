@@ -1,6 +1,6 @@
-# Protocol Buffers 2.5, Objective-C with ARC
+# Protocol Buffers 2.6.1, Objective-C with ARC
 
-This is an ARC enabled version of the [Protocol Buffers in Objective C][protobuf-objc] project. It supports Protobuf 2.5.
+This is an ARC enabled version of the [Protocol Buffers in Objective C][protobuf-objc] project. It supports Protobuf 2.6.1.
 
 Protocol Buffers are a way of encoding structured data in an efficient yet extensible format.
 This project is based on an implementation of Protocol Buffers from Google.  See the
@@ -11,25 +11,9 @@ This project is based on an implementation of Protocol Buffers from Google.  See
 
 # Credits
 
-InSports, Inc.
--------------------------------------------------------------------------------
 - Greg Arakelian <greg@arakelian.com>
-
-Regwez Inc.
--------------------------------------------------------------------------------
 - Ragy Eleish <ragy@regwez.com>
-
-Booyah Inc.
--------------------------------------------------------------------------------
 - Jon Parise <jon@booyah.com>
-
-
-Google Protocol Buffers, Objective C
--------------------------------------------------------------------------------
 - Cyrus Najmabadi  (http://code.google.com/p/metasyntactic/wiki/ProtocolBuffers)
 - Sergey Martynov  (http://github.com/martynovs/protobuf-objc)
-
-
-Google Protocol Buffers
--------------------------------------------------------------------------------
 - Kenton Varda, Sanjay Ghemawat, Jeff Dean, and others
