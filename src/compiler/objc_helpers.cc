@@ -368,6 +368,8 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
     case OBJECTIVECTYPE_BOOLEAN:
     case OBJECTIVECTYPE_ENUM   :
       return true;
+    default:
+	  return false;
     }
 
     return false;
@@ -433,6 +435,8 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
         return "[NSNumber numberWithBool:" + value + "]";
       case OBJECTIVECTYPE_ENUM:
         return "[NSNumber numberWithInt:" + value + "]";
+      default:
+        return value;
     }
 
     return value;
