@@ -9,6 +9,19 @@ This project is based on an implementation of Protocol Buffers from Google.  See
 [g-protobuf]: http://code.google.com/p/protobuf/
 [protobuf-objc]: https://github.com/booyah/protobuf-objc
 
+# How to use
+In order to generate classes from .proto files use following steps:
+
+1. Install [Command Line Tools](https://developer.apple.com/downloads/index.action) for your OS X version.
+2. Install [Homebrew](http://brew.sh).
+3. Resolve all warnings in `brew doctor` output.
+4. Run `brew install protobuf`.
+5. Run `brew install autogen`.
+6. Run `brew install automake`.
+7. Go to project directory and run `./autogen.sh && ./configure && make`
+8. Run `./autogen.sh && ./configure && make`. Executable file will be placed to `src/compiler/protoc-gen-objc`.
+9. Run `protoc` with `--plugin=<path_to_protoc_gen_objc>` argument.<br>Output files will be placed in directory specified in `--objc_out` argument.<br>Example: `protoc --plugin=src/compiler/protoc-gen-objc --proto_path=. --objc_out=. 1.proto`
+
 # Credits
 
 - Greg Arakelian <greg@arakelian.com>
