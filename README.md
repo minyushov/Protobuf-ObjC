@@ -18,9 +18,8 @@ In order to generate classes from .proto files use following steps:
 4. Run `brew install protobuf`.
 5. Run `brew install autogen`.
 6. Run `brew install automake`.
-7. Go to project directory and run `./autogen.sh && ./configure && make`
-8. Run `./autogen.sh && ./configure && make`. Executable file will be placed to `src/compiler/protoc-gen-objc`.
-9. Run `protoc` with `--plugin=<path_to_protoc_gen_objc>` argument.<br>Output files will be placed in directory specified in `--objc_out` argument.<br>Example: `protoc --plugin=src/compiler/protoc-gen-objc --proto_path=. --objc_out=. 1.proto`
+7. Run `./autogen.sh && ./configure && make`. Executable file will be placed to `src/compiler/protoc-gen-objc`.
+8. Run `protoc` with `--plugin=<path_to_protoc_gen_objc>` argument.<br>Output files will be placed in directory specified in `--objc_out` argument.<br>Example: `protoc --plugin=src/compiler/protoc-gen-objc --proto_path=. --objc_out=. 1.proto`
 
 # Credits
 
